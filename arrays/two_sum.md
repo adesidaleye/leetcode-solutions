@@ -3,10 +3,10 @@
 [Problem Link](https://leetcode.com/problems/two-sum/)
 
 ## Goal
-I'm tackling the Two Sum problem on LeetCode, which asks me to find two numbers in an array that add up to a given target. I find this problem interesting because it seems simple at first, but it actually requires some thought to solve efficiently, and I'm excited to dive into it.
+I'm trying to solve the Two Sum problem, which asks me to find two numbers in an array that add up to a given target - it's interesting because it requires a combination of algorithmic thinking and data structure knowledge, and I'm excited to see how I can optimize my solution.
 
 ## Approach
-My initial thought was to use a brute force approach with nested loops to check every possible pair of numbers in the array. However, I quickly realized that this strategy, while straightforward, would be inefficient for large arrays. The key insight that clicked for me was that I didn't need to find all pairs, just the first pair that sums up to the target, but even that was not the most efficient way to solve this. I could have used a HashMap to store the numbers and their indices, which would allow me to find the solution in a single pass, but that's not what I initially did. I started with the brute force method, which, as I expected, worked but wasn't optimal.
+My initial thought was to use a brute force approach with nested loops to check every possible pair of numbers, but as I started coding, I realized that this strategy would be inefficient for large arrays - the key insight was recognizing that I could improve this by using a more efficient data structure, such as a hashmap, to store the numbers I've seen so far and their indices, allowing me to find the complement of the current number in constant time.
 
 ## Code
 ```java
@@ -33,4 +33,4 @@ class Solution {
 - Space complexity: O(1)
 
 ## Screenshot
-![screenshot](./Screenshot_2026-05-25_210022.png)
+![screenshot](https://res.cloudinary.com/dyyyjtqir/image/upload/v1779751914/s9mn2lhgca7vptt2jaib.png)
